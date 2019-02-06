@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({
   root: {
-    width: '90%',
+   
   },
   button: {
     marginTop: theme.spacing.unit,
@@ -72,24 +72,30 @@ class VerticalLinearStepper extends React.Component {
     });
   };*/
 
+  
+  activeStep = {
+      backgroundColor: 'red'
+  }
   render() {
     const { classes } = this.props;
     const steps = getSteps();
-    const { activeStep } = this.state;
+   const { activeStep } = this.state;
 
     return (
-
-      <div className={classes.root}>
+        <div className={classes.root}>
       <button>Component History</button>
         <Stepper activeStep={activeStep} orientation="vertical">
           {steps.map((label, index) => (
-            <Step key={label}>
+            <Step key={label}
+                styles={this.activeStep}    
+            >
               <StepLabel>{label}</StepLabel>
               <StepContent>
                 {//<Typography>{getStepContent(index)}</Typography>
                 }
                 <div className={classes.actionsContainer}>
                   <div>
+
                     {/*<Button
                       disabled={activeStep === 0}
                       onClick={this.handleBack}
@@ -133,6 +139,8 @@ class VerticalLinearStepper extends React.Component {
   }
 }
 
+
+      
 VerticalLinearStepper.propTypes = {
   classes: PropTypes.object,
 };

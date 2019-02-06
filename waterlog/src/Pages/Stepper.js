@@ -5,7 +5,7 @@ class StepperComponent extends Component {
       return (
         //displays the map
         <div >
-          <Demo/> 
+          <StepperComponent/> 
         </div>
         
       );
