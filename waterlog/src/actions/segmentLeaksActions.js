@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import {FETCH_SEGMENT_LEAKS} from "./types";
  
   export const fetchSegmentLeaks = () => dispatch => { 
@@ -14,6 +15,8 @@ import {FETCH_SEGMENT_LEAKS} from "./types";
 
 
 =======
+=======
+>>>>>>> origin/feature/Alerts_page
 import { FETCH_SEGMENTS_LEAKS } from "./types";
 
 export const fetchSegmentsLeaks = () => dispatch => {
@@ -27,4 +30,7 @@ export const fetchSegmentsLeaks = () => dispatch => {
       })
     );
 };
+<<<<<<< HEAD
 >>>>>>> Dev
+=======
+>>>>>>> origin/feature/Alerts_page
