@@ -28,6 +28,8 @@ const sensorId = 5;///
           
             <div >
               <svg>
+              <p>dsxfgdafxbcdhzxvchdacbdxcasc</p>
+
                 {
                   (() => {//main
     
@@ -125,7 +127,7 @@ const sensorId = 5;///
         )
       }
     }
-    //
+    
     ShapesComponent.propTypes = {
       fetchSensors: PropTypes.func.isRequired,
       sensors: PropTypes.array.isRequired
